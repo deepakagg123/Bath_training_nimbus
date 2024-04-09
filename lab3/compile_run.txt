@@ -1,0 +1,9 @@
+# Compile C program with MPI support
+mpicc -o hello_mpi_C hello_mpi.c
+mpirun -np 2 ./hello_mpi_C
+
+# Compile the Fortran with MPI support
+mpif90 -o hello_mpi_F hello_mpi.f90
+mpirun -np 2 ./hello_mpi_F
+
+

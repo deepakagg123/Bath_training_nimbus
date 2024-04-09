@@ -1,0 +1,11 @@
+# Compile C program with openmp support
+gcc -fopenmp -o pi_cal_C pi_cal.c -lm
+OMP_NUM_THREADS=1 ./pi_cal_C
+
+# Compile the Fortran with openmp support
+gfortran -fopenmp -o pi_cal_F pi_cal.f90
+OMP_NUM_THREADS=1 ./pi_cal_F
+
+# Run the Python with multiprocessing support
+python pi_cal.py  (In the script, 2 processes have been selected)
+
